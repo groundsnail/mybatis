@@ -1,0 +1,5 @@
+# Project exclude paths
+/.gradle/
+/batis/build/
+/batis/build/classes/java/main/
+/batis/build/classes/java/test/
