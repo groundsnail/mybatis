@@ -16,9 +16,9 @@ public class MbTest {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         List<User> userList = sqlSession.selectList("userMapper.selectBlog");
         System.out.println(userList);
-//        UserMap mapper = sqlSession.getMapper(UserMap.class);
-//        User userById = mapper.getUserById(1);
-//        System.out.println(userById);
+        UserMap mapper = sqlSession.getMapper(UserMap.class);
+        User userById = mapper.getUserById(1);
+        System.out.println(userById);
         sqlSession.close();
 
 

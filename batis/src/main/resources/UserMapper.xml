@@ -6,4 +6,9 @@
     <select id="selectBlog" resultType="User">
         select * from mybatis.user
     </select>
+    <select id="getUserById" parameterType="int" resultType="User">
+        select *
+        from mybatis.user
+        where user.id = #{id};
+    </select>
 </mapper>
